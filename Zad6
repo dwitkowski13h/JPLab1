@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    double a;
+    scanf("%lf", &a);
+    if  (a>=0)
+    {
+        
+        double pierwiastek=sqrt(a);
+        printf("Pierwiastek: %.2lf\n", pierwiastek);
+        double odwrotnosc=1/a;
+       printf("Odwrotnosc: %.2lf", odwrotnosc);
+    }
+    else if(a==0)
+    { 
+        double odwrotnosc=1/a;
+        
+         printf("Odwrotnosc: BLAD");
+    }
+    else
+    {
+      printf("Pierwiastek: BLAD\n");
+         printf("Odwrotnosc: BLAD");   
+    }
+    return 0;
+}
+
+
+
+
